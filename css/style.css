@@ -229,3 +229,19 @@ h1 {
 #listaprodutos .produto {
     width: 100%;
 }
+
+#listaprodutos h2{
+    grid-column: 1 / 5;
+    text-align: center;
+}
+
+.genero {
+    display: none;
+    text-align: center;
+    color: darkgrey;
+}
+
+.produto:hover .genero {
+    display: block;
+}
+
