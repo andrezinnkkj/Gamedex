@@ -251,9 +251,8 @@ ul {
 #principaisPromos {
     flex-direction: row;
 }
-#principaisPromos img {
-    width: 100%;
-    max-width: 100%;
+.slide{
+        flex-direction: column;
 }
 #produtosDestaque {
     grid-template-columns: 1fr;
