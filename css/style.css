@@ -446,9 +446,6 @@ footer{
     object-fit: cover;
 }
 
-.infoPromo {
-   flex: 3;
-}
 }
 
 @media (max-width: 768px) {

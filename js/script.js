@@ -1,3 +1,13 @@
+const formularioBusca = document.querySelector(".busca");
+const inputBusca = document.querySelector(".busca input");
+
+formularioBusca.addEventListener("submit", function(event) {
+    if (inputBusca.value.trim() === "") {
+        event.preventDefault();
+    }
+});
+
+
 const parametros = new URLSearchParams(window.location.search);
 const jogoPesquisado = parametros.get("jogo");
 
