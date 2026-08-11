@@ -107,26 +107,6 @@ nav {
     height: 20px;
 }
 
-#principaisPromos{
-    display: flex;
-    gap: 20px;
-    min-height: clamp(300px, 50vh, 500px);
-    width: 95%;
-    background-color: var(--secondary-color);
-    padding: 8px;
-    margin: auto;
-    border-radius: 8px;
-    box-shadow: 0px 2px 6px 0px black;
-}
-
-#principaisPromos img{
-    border-radius: 8px;
-    flex: 2;
-    width: 0;
-    height: auto;
-    object-fit:cover;
-}
-
 .infoPromo{
     display: flex;
     flex-direction: column;
@@ -262,17 +242,16 @@ footer{
         flex-direction: column;
     }
 
-   .slide img {
-    width: 100%;
-    height: 250px;
-    flex: none;
-    object-fit: cover;
-    display: block;
-}
+    .slide img {
+        width: 100%;
+        height: 250px;
+        flex: none;
+        object-fit: cover;
+    }
 
     .slide .infoPromo {
-        flex: none;
         width: 100%;
+        flex: none;
     }
 
     #produtosDestaque {
