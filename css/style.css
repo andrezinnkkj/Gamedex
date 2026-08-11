@@ -87,6 +87,7 @@ nav {
 }
 .busca input {
     background-color: var(--background-color);
+    color: var(--text-color);
     border-radius: 4px;
     width: 0;
     padding: 0;
