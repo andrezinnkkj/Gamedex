@@ -5,7 +5,7 @@
 }
 
 :root{
-    --primary-color: rgb(191, 26, 144);
+    --primary-color: #bf1a90;
     --secondary-color: rgb(60, 60, 60);
     --background-color: #252525;
     --text-color: #f5f5f5;
@@ -47,11 +47,11 @@ h1{
 ul{
     display: flex;
     list-style: none;
-    gap: 10px;
+    gap: 20px;
 }
 
-nav{
-    margin-left: auto;
+nav {
+    margin: 0 auto;
 }
 
 .navBar a{
@@ -62,6 +62,49 @@ nav{
 .navBar a:hover{
     color: var(--text-color);
     border-bottom: 2px solid var(--text-color);
+}
+
+.navBar a.ativo {
+    color: darkviolet;
+}
+
+.navBar.busca input{
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border-radius: 4px;
+    padding: 4px;
+}
+
+.busca {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.busca input {
+    width: 0;
+    padding: 0;
+    opacity: 0;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.busca:focus-within input {
+    width: 180px;
+    padding: 8px;
+    opacity: 1;
+}
+
+.busca button {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border: none;
+    cursor: pointer;
+    align-items: center;
+}
+
+.busca button img {
+    width: 20px;
+    height: 20px;
 }
 
 #principaisPromos{
@@ -389,21 +432,17 @@ h1 {
         gap: 15px;
     }
     .promo {
-        flex-direction: column;
         min-height: auto;
     }
-    .promo img {
-        width: 100%;
-        height: auto;
-    }
-    .promo .infoPromo {
-        width: 100%;
-        text-align: center;
+    .promo img {    
+height: auto;
     }
 }
 
 @media (max-width: 600px) {
     #listaPromocoes {
+        display: flex;
+        flex-direction: column;
         gap: 10px;
     }
     .promo {
@@ -411,5 +450,11 @@ h1 {
     }
     .promo .infoPromo h3 {
         font-size: 22px;
+        
+    }
+
+    .promo img {
+        width: 100%;    
+height: auto;
     }
 }
