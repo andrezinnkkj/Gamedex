@@ -3,6 +3,8 @@ const jogoPesquisado = parametros.get("jogo");
 
 if (jogoPesquisado) {
     const produtos = document.querySelectorAll(".produto");
+    const mensagemBusca = document.querySelector("#mensagemBusca");
+
     let encontrado = false;
 
     produtos.forEach(produto => {
@@ -19,6 +21,6 @@ if (jogoPesquisado) {
     });
 
     if (!encontrado) {
-        alert("Jogo não encontrado!");
+        mensagemBusca.style.display = "block";
     }
 }
