@@ -249,7 +249,7 @@ ul {
     justify-content: center;
 }
 #principaisPromos {
-    flex-direction: column;
+    flex-direction: row;
 }
 #principaisPromos img {
     width: 100%;
