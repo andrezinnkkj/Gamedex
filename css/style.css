@@ -211,66 +211,6 @@ footer{
     margin: 10px auto;
     font-style: italic;
 }
-
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        gap: 0;
-    }
-
-    header img {
-        margin: 0;
-        width: 150px;
-    }
-
-    nav {
-        margin-left: 0;
-    }
-
-    ul {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    #principaisPromos {
-        flex-direction: row;
-        overflow-x: auto;
-    }
-
-    .slide {
-        flex: 0 0 100%;
-        flex-direction: column;
-    }
-
-    .slide img {
-        width: 100%;
-        height: 250px;
-        flex: none;
-        object-fit: cover;
-    }
-
-    .slide .infoPromo {
-        width: 100%;
-        flex: none;
-    }
-
-    #produtosDestaque {
-        grid-template-columns: 1fr;
-    }
-
-    #produtosDestaque h2 {
-        grid-column: 1;
-    }
-
-    .produto {
-        width: 100%;
-    }
-
-    h1 {
-        font-size: 32px;
-    }
-}
-
 #listaprodutos{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
