@@ -34,3 +34,18 @@ if (jogoPesquisado) {
         mensagemBusca.style.display = "block";
     }
 }
+
+const generoPesquisado = parametros.get("genero");
+const produtos = document.querySelectorAll(".produto");
+
+if (generoPesquisado) {
+    produtos.forEach(produto => {
+        const genero = produto.dataset.genero;
+
+        if (genero === generoPesquisado) {
+            produto.style.display = "flex";
+        } else {
+            produto.style.display = "none";
+        }
+    });
+}
