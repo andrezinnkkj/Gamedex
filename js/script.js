@@ -7,6 +7,12 @@ formularioBusca.addEventListener("submit", function(event) {
     }
 });
 
+const apelidos = {
+    "gta": "Grand Theft Auto V",
+    "gta 5": "Grand Theft Auto V",
+    "fnaf": "Five Nights at Freddy's",
+    "rdr2": "Red Dead Redemption 2"
+};
 
 const parametros = new URLSearchParams(window.location.search);
 const jogoPesquisado = parametros.get("jogo");
@@ -17,10 +23,13 @@ if (jogoPesquisado) {
 
     let encontrado = false;
 
+    const busca = jogoPesquisado.toLowerCase();
+    const buscaCorrigida = apelidos[busca] || busca;
+
     produtos.forEach(produto => {
         const nomeJogo = produto.dataset.jogo;
 
-        if (nomeJogo.toLowerCase().includes(jogoPesquisado.toLowerCase())) {
+        if (nomeJogo.toLowerCase().includes(buscaCorrigida.toLowerCase())) {
             encontrado = true;
 
             produto.scrollIntoView({
