@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameDex</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="img/logos/logo.png" alt="Logo do GameDex">
+        <h1>GameDex</h1>
+        <nav>
+            <ul>
+                <li class="navBar"><a href="index.html">Início</a></li>
+                <li class="navBar"><a href="promocoes.html">Promoções</a></li>
+                <li class="navBar"><a href="sobre.html">Sobre</a></li>
+                <li class="navBar"><a class="ativo" href="contato.html">Contato</a></li>
+                <form class="busca" action="produtos.html" method="get">
+                    <input type="text" name="jogo" placeholder="Pesquisar jogos...">
+                    <button type="submit"><img src="img/logos/pesquisar.png" alt="Pesquisar"></button>
+                </form>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <form class="contato" action="#" method="post">
+            <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="nome">Nome Completo:</label>
+            <input type="text" name="nome" maxlength="40" placeholder="Digite seu nome" required>
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" placeholder="Digite seu email" required>
+            <br><br>
+            <label for="telefone">Telefone:</label>
+            <input type="text" name="telefone" maxlength="13" placeholder="(xx) xxxxx-xxxx" required>
+            </fieldset>
+            <br>
+            <fieldset>
+            <legend>Assunto</legend>
+            <label for="Mensagem">Mensagem:</label>
+            <input type="text" name="Mensagem" required>
+            <br>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 GameDex. Todos os direitos reservados.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
