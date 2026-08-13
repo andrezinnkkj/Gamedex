@@ -13,7 +13,8 @@ const apelidos = {
     "fnaf": "Five Nights at Freddy's",
     "rdr2": "Red Dead Redemption 2",
     "rdr": "Red Dead Redemption 2",
-    "fifa":"EA SPORTS FC™ 27"
+    "fifa":"EA SPORTS FC™ 27",
+    "fifa 27":"EA SPORTS FC™ 27"
 };
 
 const parametros = new URLSearchParams(window.location.search);
